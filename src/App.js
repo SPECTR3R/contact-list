@@ -38,7 +38,7 @@ function InputForm({ submitData }) {
   return (
     <form onSubmit={(e) => submitData(e, data, setData)}>
       <label>
-        Name:
+        First Name:{'  '}
         <input
           type='text'
           name='firstName'
@@ -48,7 +48,7 @@ function InputForm({ submitData }) {
         />
       </label>
       <label>
-        lastName:
+        Last Name:{'  '}
         <input
           type='text'
           name='lastName'
@@ -58,7 +58,7 @@ function InputForm({ submitData }) {
         />
       </label>
       <label>
-        Phone:
+        Phone:{'  '}
         <input
           type='phone'
           name='phone'

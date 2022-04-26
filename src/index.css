@@ -14,17 +14,21 @@ div {
 
 form {
   margin: 0 auto;
+  height: 8rem;
   max-width: 600px;
   padding: 1.25rem;
   border: 1px solid #eaeaea;
   border-radius: 10px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
+
 table {
   margin: 3rem auto;
   width: 80%;
   border-spacing: 0;
   margin-bottom: 1rem;
-  
 }
