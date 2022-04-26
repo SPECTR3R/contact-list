@@ -37,37 +37,31 @@ function InputForm({ submitData }) {
   };
   return (
     <form onSubmit={(e) => submitData(e, data, setData)}>
-      <label>
-        First Name:{'  '}
-        <input
-          type='text'
-          name='firstName'
-          value={data.firstName}
-          onChange={handleChange}
-          required
-        />
-      </label>
-      <label>
-        Last Name:{'  '}
-        <input
-          type='text'
-          name='lastName'
-          value={data.lastName}
-          onChange={handleChange}
-          required
-        />
-      </label>
-      <label>
-        Phone:{'  '}
-        <input
-          type='phone'
-          name='phone'
-          value={data.phone}
-          onChange={handleChange}
-          required
-        />
-      </label>
-      <input type='submit' value='Submit' />
+      <label htmlFor='firstName'>First Name:{'  '} </label>
+      <input
+        type='text'
+        name='firstName'
+        value={data.firstName}
+        onChange={handleChange}
+        required
+      />
+      <label htmlFor='lastName'>Last Name:{'  '} </label>
+      <input
+        type='text'
+        name='lastName'
+        value={data.lastName}
+        onChange={handleChange}
+        required
+      />
+      <label htmlFor='Phone'>Phone:{'  '} </label>
+      <input
+        type='phone'
+        name='phone'
+        value={data.phone}
+        onChange={handleChange}
+        required
+      />
+      <input id='submit' type='submit' value='Submit' />
     </form>
   );
 }

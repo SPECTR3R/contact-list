@@ -14,7 +14,7 @@ div {
 
 form {
   margin: 0 auto;
-  height: 8rem;
+  min-height: 8rem;
   max-width: 600px;
   padding: 1.25rem;
   border: 1px solid #eaeaea;
@@ -30,5 +30,21 @@ table {
   margin: 3rem auto;
   width: 80%;
   border-spacing: 0;
+  margin-bottom: 1rem;
+}
+input {
+  max-width: 90%;
+  margin-bottom: 1rem;
+}
+#submit {
+  align-self: center;
+  background-color: #e7e7e7; /* Green */
+  border: none;
+  color: rgb(44, 42, 42);
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
   margin-bottom: 1rem;
 }
